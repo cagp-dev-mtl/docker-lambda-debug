@@ -1,0 +1,25 @@
+{
+  "name": "serverless-debug",
+  "version": "1.0.0",
+  "description": "Serverless application with Serverless",
+  "scripts": {
+    "start": "sls offline start --host 0.0.0.0 --port 4000",
+    "debug": "export SLS_DEBUG=* && NODE_ENV=development && node --inspect=0.0.0.0 ./node_modules/.bin/serverless offline start --port 4000"
+  },
+  "dependencies": {
+    "serverless": "^1.83.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.1",
+    "@types/node": "^8.0.57",
+    "@types/uuid": "^3.4.4",
+    "serverless-offline": "^4.10.6",
+    "serverless-webpack": "^5.1.1",
+    "source-map-support": "^0.5.6",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.5.0"
+  },
+  "author": "Carlos Gutierrez",
+  "license": "MIT"
+}
